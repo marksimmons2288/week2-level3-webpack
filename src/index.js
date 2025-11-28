@@ -9,7 +9,10 @@
 import createHeader from "./components/header";
 import createFooter from "./components/footer";
 import { add } from "./utils/math";
+import { toKebabCase } from "./utils/strings";
 
+// Import Styles
+import "./styles.scss";
 
 function main() {
   const root = document.getElementById("app-root");
@@ -28,6 +31,7 @@ function main() {
   resultParagraph.textContent = `Example: add(2, 3) = ${add(2, 3)}`;
 
   const kebabParagraph = document.createElement("p");
+  kebabParagraph.textContent = `Kebab case of "Webpack Bundler Demo" is: "${toKebabCase("Webpack Bundler Demo")}"`;
   
 
   const footer = createFooter();
