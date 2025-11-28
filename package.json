@@ -14,7 +14,8 @@
     "lint": "npm run lint:js && npm run lint:scss && npm run lint:html",
     "lint:fix:js": "eslint \"src/**/*.js\" --fix",
     "lint:fix:scss": "stylelint \"src/**/*.scss\" --fix",
-    "lint:fix": "npm run lint:fix:js && npm run lint:,fix:scss"
+    "lint:fix": "npm run lint:fix:js && npm run lint:,fix:scss",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "css-loader": "^7.1.2",
     "eslint": "^9.39.1",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.5",
     "htmlhint": "^1.8.0",
     "postcss": "^8.5.6",
