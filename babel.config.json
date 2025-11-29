@@ -1,0 +1,15 @@
+// Browser compatibility settings for Babel (e.g. "safari": "14", "edge": "90", ios versions etc...) notice even the numbers are strings due to JSON format
+
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "80",
+          "firefox": "78"
+        }
+      }
+    ]
+  ]
+}
